@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333;
+  font-family: system-ui;
+}
+
+.crud {
+  width: 80%;
+  margin: auto;
+  padding-bottom: 50px;
+}
+
+.crud .head {
+  text-align: center;
+  color: #fff;
+  margin: 20px auto;
+}
+.crud .head h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.crud .head p {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #f4f4f4;
+  letter-spacing: 2px;
+}
+
+.crud .inputs,
+.crud .outputs {
+  padding: 0 20px;
+}
+.crud .inputs input,
+.crud .outputs input {
+  width: 100%;
+  height: 40px;
+  padding: 5px 20px;
+  background-color: #222222;
+  margin: 6px 0;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
+.crud .inputs input:focus,
+.crud .outputs input:focus {
+  background-color: #000;
+}
+.crud .inputs .price {
+  display: flex;
+  align-items: center;
+}
+.crud .inputs .price input {
+  width: 25%;
+  margin-right: 20px;
+}
+.crud .inputs .price #total {
+  background-color: #f00;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease-in-out;
+  width: 25%;
+  font-size: 18px;
+  border-radius: 4px;
+  color: #fff;
+}
+.crud .inputs .price #total::before {
+  content: "Total =";
+  margin-right: 5px;
+}
+.crud .inputs button {
+  width: 100%;
+  text-align: center;
+  height: 40px;
+  border-radius: 4px;
+  background-color: transparent;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  color: #3498db;
+  outline: none;
+  border: none;
+  font-size: 17px;
+  border: 2px solid #3498db;
+  margin: 8px 0;
+}
+.crud .inputs button:hover {
+  background-color: #3498db;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.crud .outputs .btnsearch {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.crud .outputs .btnsearch button {
+  width: 40%;
+  text-align: center;
+  height: 40px;
+  border-radius: 4px;
+  background-color: transparent;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  color: #3498db;
+  outline: none;
+  border: none;
+  font-size: 17px;
+  border: 2px solid #3498db;
+  margin: 8px 0;
+}
+.crud .outputs .btnsearch button:hover {
+  background-color: #3498db;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.crud #deleteAll {
+  margin: 15px 0;
+  padding: 0 20px;
+}
+
+.crud #deleteAll button {
+  width: 100%;
+  text-align: center;
+  height: 40px;
+  border-radius: 4px;
+  background-color: transparent;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  color: #3498db;
+  outline: none;
+  border: none;
+  font-size: 17px;
+  border: 2px solid #3498db;
+}
+.crud #deleteAll button:hover {
+  background-color: #3498db;
+  color: #fff;
+  letter-spacing: 1px;
+}
+.crud table {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  margin-top: 15px;
+}
+.crud table th {
+  text-transform: uppercase;
+}
+.crud table th,
+.crud table tbody tr td {
+  padding: 8px;
+}
+.crud table tbody tr td i {
+  font-size: 22px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.crud table tbody tr td #edit {
+  color: rgb(255, 179, 0);
+}
+.crud table tbody tr td #trash {
+  color: #f00;
+}
